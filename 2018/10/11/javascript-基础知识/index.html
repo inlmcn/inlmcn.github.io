@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="前端学习" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>javascript 基础知识 | 前端学习 - 前端修行之路-无与为乐者</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">前端学习</a></h1>
+        <h2 class="subtitle">前端修行之路-无与为乐者</h2>
+      </div>
+      
+    </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+        <li role="menuitem"><a href="/">首页</a></li>
+        
+        <li role="menuitem"><a href="/archives/">归档</a></li>
+        
+        <li role="menuitem"><a href="/categories/">分类</a></li>
+        
+        <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://www.inlm.cn/2018/10/11/javascript-基础知识/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Wang Li">
+       <meta itemprop="description" content="前端开发、HTML5、CSS3、Javascript的前端开发独立博客。">
+       <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="前端学习">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">javascript 基础知识</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-10-11T01:06:05+08:00">2018-10-11 01:06:05</time></span>
+        </span>
+        
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>1 创建脚本块<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">JavaScript 代码写在这里面</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>2 隐藏脚本代码<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="built_in">document</span>.write(“Hello”);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>在不支持JavaScript的浏览器中将不执行相关代码<br>3 浏览器不支持的时候显示<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;noscript&gt;</span><br><span class="line">Hello to the non-JavaScript browser.</span><br><span class="line">&lt;<span class="regexp">/noscript&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>4 链接外部脚本文件<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript” src=”/”filename.js””&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>5 注释脚本<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This is a comment</span></span><br><span class="line"><span class="built_in">document</span>.write(“Hello”); <span class="comment">// This is a comment</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">All of this</span></span><br><span class="line"><span class="comment">is a comment</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
+<p>6 输出到浏览器<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(“&lt;strong&gt;Hello&lt;<span class="regexp">/strong&gt;”);</span></span><br></pre></td></tr></table></figure></p>
+<p>7 定义变量<br>引用内容程序代码<br><code>var myVariable = “some value”;</code><br>8 字符串相加<br>引用内容程序代码<br><code>var myString = “String1” + “String2”;</code><br>9 字符串搜索<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> myVariable = “Hello there”;</span><br><span class="line"><span class="keyword">var</span> therePlace = myVariable.search(“there”);</span><br><span class="line"><span class="built_in">document</span>.write(therePlace);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>10 字符串替换<br>引用内容程序代码<br><code>thisVar.replace(“Monday”,”Friday”);</code><br>11 格式化字串<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> myVariable = “Hello there”;</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.big() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.blink() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.bold() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.fixed() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.fontcolor(“red”) + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.fontsize(“<span class="number">18</span>pt”) + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.italics() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.small() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.strike() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.sub() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.sup() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.toLowerCase() + “&lt;br&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(myVariable.toUpperCase() + “&lt;br&gt;”);</span><br><span class="line"><span class="keyword">var</span> firstString = “My <span class="built_in">String</span>”;</span><br><span class="line"><span class="keyword">var</span> finalString = firstString.bold().toLowerCase().fontcolor(“red”);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>12 创建数组<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> myArray = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">5</span>);</span><br><span class="line">myArray[<span class="number">0</span>] = “First Entry”;</span><br><span class="line">myArray[<span class="number">1</span>] = “Second Entry”;</span><br><span class="line">myArray[<span class="number">2</span>] = “Third Entry”;</span><br><span class="line">myArray[<span class="number">3</span>] = “Fourth Entry”;</span><br><span class="line">myArray[<span class="number">4</span>] = “Fifth Entry”;</span><br><span class="line"><span class="keyword">var</span> anotherArray = <span class="keyword">new</span> <span class="built_in">Array</span>(“First Entry”,”Second Entry”,”Third Entry”,”Fourth Entry”,”Fifth Entry”);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>13 数组排序<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> myArray = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">5</span>);</span><br><span class="line">myArray[<span class="number">0</span>] = “z”;</span><br><span class="line">myArray[<span class="number">1</span>] = “c”;</span><br><span class="line">myArray[<span class="number">2</span>] = “d”;</span><br><span class="line">myArray[<span class="number">3</span>] = “a”;</span><br><span class="line">myArray[<span class="number">4</span>] = “q”;</span><br><span class="line"><span class="built_in">document</span>.write(myArray.sort());</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>14 分割字符串<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> myVariable = “a,b,c,d”;</span><br><span class="line"><span class="keyword">var</span> stringArray = myVariable.split(“,”);</span><br><span class="line"><span class="built_in">document</span>.write(stringArray[<span class="number">0</span>]);</span><br><span class="line"><span class="built_in">document</span>.write(stringArray[<span class="number">1</span>]);</span><br><span class="line"><span class="built_in">document</span>.write(stringArray[<span class="number">2</span>]);</span><br><span class="line"><span class="built_in">document</span>.write(stringArray[<span class="number">3</span>]);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>15 弹出警告信息<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="built_in">window</span>.alert(“Hello”);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>16 弹出确认框<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> result = <span class="built_in">window</span>.confirm(“Click OK to <span class="keyword">continue</span>”);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>17 自定义函数<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">multiple</span>(<span class="params">number1,number2</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> result = number1 * number2;</span><br><span class="line"><span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>18 调用JS函数<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”#”</span> <span class="attr">onClick</span>=<span class="string">”functionName()”</span>&gt;</span>Link text<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”/”javascript:functionName”()”</span>&gt;</span>Link text<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>19 在页面加载完成后执行函数<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onLoad</span>=<span class="string">”functionName();”</span>&gt;</span></span><br><span class="line">Body of the page</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>20 条件判断<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> userChoice = <span class="built_in">window</span>.confirm(“Choose OK or Cancel”);</span><br><span class="line"><span class="keyword">var</span> result = (userChoice == <span class="literal">true</span>) ? “OK” : “Cancel”;</span><br><span class="line"><span class="built_in">document</span>.write(result);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>21 指定次数循环<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="keyword">var</span> myArray = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">3</span>);</span><br><span class="line">myArray[<span class="number">0</span>] = “Item <span class="number">0</span>”;</span><br><span class="line">myArray[<span class="number">1</span>] = “Item <span class="number">1</span>”;</span><br><span class="line">myArray[<span class="number">2</span>] = “Item <span class="number">2</span>”;</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; myArray.length; i++) &#123;</span><br><span class="line"><span class="built_in">document</span>.write(myArray[i] + “&lt;br&gt;”);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>22 设定将来执行<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">window</span>.alert(“Hello”);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">window</span>.setTimeout(“hello()”,<span class="number">5000</span>);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>23 定时执行函数<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">window</span>.alert(“Hello”);</span><br><span class="line"><span class="built_in">window</span>.setTimeout(“hello()”,<span class="number">5000</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">window</span>.setTimeout(“hello()”,<span class="number">5000</span>);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>24 取消定时执行<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">window</span>.alert(“Hello”);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> myTimeout = <span class="built_in">window</span>.setTimeout(“hello()”,<span class="number">5000</span>);</span><br><span class="line"><span class="built_in">window</span>.clearTimeout(myTimeout);</span><br><span class="line"><span class="comment">// –&gt;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>25 在页面卸载时候执行函数<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onUnload</span>=<span class="string">”functionName();”</span>&gt;</span></span><br><span class="line">Body of the page</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>JavaScript就这么回事2：浏览器输出<br>26 访问document对象<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> myURL = <span class="built_in">document</span>.URL;</span><br><span class="line"><span class="built_in">window</span>.alert(myURL);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>27 动态输出HTML<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">document</span>.write(“&lt;p&gt;Here’s some information about <span class="keyword">this</span> <span class="built_in">document</span>:<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>”);</span><br><span class="line"><span class="built_in">document</span>.write(“&lt;ul&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(“&lt;li&gt;Referring Document: “ + <span class="built_in">document</span>.referrer + “&lt;<span class="regexp">/li&gt;”);</span></span><br><span class="line"><span class="regexp">document.write(“&lt;li&gt;Domain: “ + document.domain + “&lt;/</span>li&gt;”);</span><br><span class="line"><span class="built_in">document</span>.write(“&lt;li&gt;URL: “ + <span class="built_in">document</span>.URL + “&lt;<span class="regexp">/li&gt;”);</span></span><br><span class="line"><span class="regexp">document.write(“&lt;/u</span>l&gt;”);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>28 输出换行<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.writeln(“&lt;strong&gt;a&lt;<span class="regexp">/strong&gt;”);</span></span><br><span class="line"><span class="regexp">document.writeln(“b”);</span></span><br></pre></td></tr></table></figure></p>
+<p>29 输出日期<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> thisDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">document</span>.write(thisDate.toString());</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>30 指定日期的时区<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> myOffset = <span class="number">-2</span>;</span><br><span class="line"><span class="keyword">var</span> currentDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">var</span> userOffset = currentDate.getTimezoneOffset()/<span class="number">60</span>;</span><br><span class="line"><span class="keyword">var</span> timeZoneDifference = userOffset – myOffset;</span><br><span class="line">currentDate.setHours(currentDate.getHours() + timeZoneDifference);</span><br><span class="line"><span class="built_in">document</span>.write(“The time and date <span class="keyword">in</span> Central Europe is: “ + currentDate.toLocaleString());</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>31 设置日期输出格式<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> thisDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">var</span> thisTimeString = thisDate.getHours() + “:” + thisDate.getMinutes();</span><br><span class="line"><span class="keyword">var</span> thisDateString = thisDate.getFullYear() + “/” + thisDate.getMonth() + “/” + thisDate.getDate();</span><br><span class="line"><span class="built_in">document</span>.write(thisTimeString + “ on “ + thisDateString);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>32 读取URL参数<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> urlParts = <span class="built_in">document</span>.URL.split(“?”);</span><br><span class="line"><span class="keyword">var</span> parameterParts = urlParts[<span class="number">1</span>].split(“&amp;”);</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; parameterParts.length; i++) &#123;</span><br><span class="line"><span class="keyword">var</span> pairParts = parameterParts[i].split(“=”);</span><br><span class="line"><span class="keyword">var</span> pairName = pairParts[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">var</span> pairValue = pairParts[<span class="number">1</span>];</span><br><span class="line"><span class="built_in">document</span>.write(pairName + “ ：“ +pairValue );</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>你还以为HTML是无状态的么？<br>33 打开一个新的document对象<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">newDocument</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">document</span>.open();</span><br><span class="line"><span class="built_in">document</span>.write(“&lt;p&gt;This is a New Document.&lt;<span class="regexp">/p&gt;”);</span></span><br><span class="line"><span class="regexp">document.close();</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>34 页面跳转<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.location = “http:<span class="comment">//www.x-force.cn/”;</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>35 添加网页加载进度窗口<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">language</span>=<span class="string">’javaScript’</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> placeHolder = <span class="built_in">window</span>.open(‘holder.html’,<span class="string">'placeholder’,'</span>width=<span class="number">200</span>,height=<span class="number">200</span>′);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>The Main Page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onLoad</span>=<span class="string">’placeHolder.close()’</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is the main page<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>JavaScript就这么回事3：图像<br>36 读取图像属性<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”/”image1.jpg””</span> <span class="attr">name</span>=<span class="string">”myImage”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”#</span> ” <span class="attr">onClick</span>=<span class="string">”window.alert(document.myImage.width)”</span>&gt;</span>Width<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>37 动态加载图像<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">myImage = <span class="keyword">new</span> Image;</span><br><span class="line">myImage.src = “Tellers1.jpg”;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>38 简单的图像替换<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line">rollImage = <span class="keyword">new</span> Image;</span><br><span class="line">rollImage.src = “rollImage1.jpg”;</span><br><span class="line">defaultImage = <span class="keyword">new</span> Image;</span><br><span class="line">defaultImage.src = “image1.jpg”;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”/”myUrl””</span> <span class="attr">onMouseOver</span>=<span class="string">”document.myImage.src</span> = <span class="string">rollImage.src;”</span></span></span><br><span class="line"><span class="tag"><span class="attr">onMouseOut</span>=<span class="string">”document.myImage.src</span> = <span class="string">defaultImage.src;”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”/”image1.jpg””</span> <span class="attr">name</span>=<span class="string">”myImage”</span> <span class="attr">width</span>=<span class="string">100</span> <span class="attr">height</span>=<span class="string">100</span> <span class="attr">border</span>=<span class="string">0</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>39 随机显示图像<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> imageList = <span class="keyword">new</span> <span class="built_in">Array</span>;</span><br><span class="line">imageList[<span class="number">0</span>] = “image1.jpg”;</span><br><span class="line">imageList[<span class="number">1</span>] = “image2.jpg”;</span><br><span class="line">imageList[<span class="number">2</span>] = “image3.jpg”;</span><br><span class="line">imageList[<span class="number">3</span>] = “image4.jpg”;</span><br><span class="line"><span class="keyword">var</span> imageChoice = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * imageList.length);</span><br><span class="line"><span class="built_in">document</span>.write(‘&lt;img src=”’ + imageList[imageChoice] + ‘“&gt;’);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>40 函数实现的图像替换<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> source = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> replacement = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createRollOver</span>(<span class="params">originalImage,replacementImage</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> imageArray = <span class="keyword">new</span> <span class="built_in">Array</span>;</span><br><span class="line">imageArray[source] = <span class="keyword">new</span> Image;</span><br><span class="line">imageArray[source].src = originalImage;</span><br><span class="line">imageArray[replacement] = <span class="keyword">new</span> Image;</span><br><span class="line">imageArray[replacement].src = replacementImage;</span><br><span class="line"><span class="keyword">return</span> imageArray;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> rollImage = createRollOver(“image1.jpg”,”rollImage1.jpg”);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”#”</span> <span class="attr">onMouseOver</span>=<span class="string">”document.myImage1.src</span> = <span class="string">rollImage1[replacement].src;”</span></span></span><br><span class="line"><span class="tag"><span class="attr">onMouseOut</span>=<span class="string">”document.myImage1.src</span> = <span class="string">rollImage1[source].src;”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”/”image1.jpg””</span> <span class="attr">width</span>=<span class="string">100</span> <span class="attr">name</span>=<span class="string">”myImage1”</span> <span class="attr">border</span>=<span class="string">0</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>41 创建幻灯片<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> imageList = <span class="keyword">new</span> <span class="built_in">Array</span>;</span><br><span class="line">imageList[<span class="number">0</span>] = <span class="keyword">new</span> Image;</span><br><span class="line">imageList[<span class="number">0</span>].src = “image1.jpg”;</span><br><span class="line">imageList[<span class="number">1</span>] = <span class="keyword">new</span> Image;</span><br><span class="line">imageList[<span class="number">1</span>].src = “image2.jpg”;</span><br><span class="line">imageList[<span class="number">2</span>] = <span class="keyword">new</span> Image;</span><br><span class="line">imageList[<span class="number">2</span>].src = “image3.jpg”;</span><br><span class="line">imageList[<span class="number">3</span>] = <span class="keyword">new</span> Image;</span><br><span class="line">imageList[<span class="number">3</span>].src = “image4.jpg”;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">slideShow</span>(<span class="params">imageNumber</span>) </span>&#123;</span><br><span class="line"><span class="built_in">document</span>.slideShow.src = imageList[imageNumber].src;</span><br><span class="line">imageNumber += <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (imageNumber &lt; imageList.length) &#123;</span><br><span class="line"><span class="built_in">window</span>.setTimeout(“slideShow(“ + imageNumber + “)”,<span class="number">3000</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onLoad</span>=<span class="string">”slideShow(0)”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”/”image1.jpg””</span> <span class="attr">width</span>=<span class="string">100</span> <span class="attr">name</span>=<span class="string">”slideShow”</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>42 随机广告图片<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> imageList = <span class="keyword">new</span> <span class="built_in">Array</span>;</span><br><span class="line">imageList[<span class="number">0</span>] = “image1.jpg”;</span><br><span class="line">imageList[<span class="number">1</span>] = “image2.jpg”;</span><br><span class="line">imageList[<span class="number">2</span>] = “image3.jpg”;</span><br><span class="line">imageList[<span class="number">3</span>] = “image4.jpg”;</span><br><span class="line"><span class="keyword">var</span> urlList = <span class="keyword">new</span> <span class="built_in">Array</span>;</span><br><span class="line">urlList[<span class="number">0</span>] = “http:<span class="comment">//some.host/”;</span></span><br><span class="line">urlList[<span class="number">1</span>] = “http:<span class="comment">//another.host/”;</span></span><br><span class="line">urlList[<span class="number">2</span>] = “http:<span class="comment">//somewhere.else/”;</span></span><br><span class="line">urlList[<span class="number">3</span>] = “http:<span class="comment">//right.here/”;</span></span><br><span class="line"><span class="keyword">var</span> imageChoice = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * imageList.length);</span><br><span class="line"><span class="built_in">document</span>.write(‘&lt;a href=”’ + urlList[imageChoice] + ‘“&gt;<span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”’</span> + <span class="attr">imageList</span>[<span class="attr">imageChoice</span>] + ‘“&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>’);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>JavaScript就这么回事4：表单<br>43 表单构成<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">”post”</span> <span class="attr">action</span>=<span class="string">”target.html”</span> <span class="attr">name</span>=<span class="string">”thisForm”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”myText”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">”mySelect”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”1”</span>&gt;</span>First Choice<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”2”</span>&gt;</span>Second Choice<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”submit”</span> <span class="attr">value</span>=<span class="string">”Submit</span> <span class="attr">Me</span>”&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>44 访问表单中的文本框内容<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”myText”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">’#’</span> <span class="attr">onClick</span>=<span class="string">’window.alert(document.myForm.myText.value);’</span>&gt;</span>Check Text Field<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>45 动态复制文本框内容<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span>&gt;</span></span><br><span class="line">Enter some Text: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”myText”</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Copy Text: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”copyText”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”#”</span> <span class="attr">onClick</span>=<span class="string">”document.myForm.copyText.value</span> =</span></span><br><span class="line"><span class="tag"><span class="attr">document.myForm.myText.value</span>;”&gt;</span>Copy Text Field<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>46 侦测文本框的变化<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span>&gt;</span></span><br><span class="line">Enter some Text: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”myText”</span> <span class="attr">onChange</span>=<span class="string">”alert(this.value);”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>47 访问选中的Select<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">”mySelect”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”First</span> <span class="attr">Choice</span>”&gt;</span>1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”Second</span> <span class="attr">Choice</span>”&gt;</span>2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”Third</span> <span class="attr">Choice</span>”&gt;</span>3<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">’#’</span> <span class="attr">onClick</span>=<span class="string">’alert(document.myForm.mySelect.value);’</span>&gt;</span>Check Selection List<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>48 动态增加Select项<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">”mySelect”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”First</span> <span class="attr">Choice</span>”&gt;</span>1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">”Second</span> <span class="attr">Choice</span>”&gt;</span>2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">document</span>.myForm.mySelect.length++;</span><br><span class="line"><span class="built_in">document</span>.myForm.mySelect.options[<span class="built_in">document</span>.myForm.mySelect.length - <span class="number">1</span>].text = “<span class="number">3</span>”;</span><br><span class="line"><span class="built_in">document</span>.myForm.mySelect.options[<span class="built_in">document</span>.myForm.mySelect.length - <span class="number">1</span>].value = “Third Choice”;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>49 验证表单字段<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkField</span>(<span class="params">field</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (field.value == “”) &#123;</span><br><span class="line"><span class="built_in">window</span>.alert(“You must enter a value <span class="keyword">in</span> the field”);</span><br><span class="line">field.focus();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span> <span class="attr">action</span>=<span class="string">”target.html”</span>&gt;</span></span><br><span class="line">Text Field: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”myField”onBlur</span>=<span class="string">”checkField(this)”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”submit”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>50 验证Select项<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkList</span>(<span class="params">selection</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (selection.length == <span class="number">0</span>) &#123;</span><br><span class="line"><span class="built_in">window</span>.alert(“You must make a selection <span class="keyword">from</span> the list.”);</span><br><span class="line"><span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>51 动态改变表单的action<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span> <span class="attr">action</span>=<span class="string">”login.html”</span>&gt;</span></span><br><span class="line">Username: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”username”</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Password: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”password”</span> <span class="attr">name</span>=<span class="string">”password”</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”button”</span> <span class="attr">value</span>=<span class="string">”Login”</span> <span class="attr">onClick</span>=<span class="string">”this.form.submit();”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”button”</span> <span class="attr">value</span>=<span class="string">”Register”</span> <span class="attr">onClick</span>=<span class="string">”this.form.action</span> = <span class="string">‘register.html’;</span> <span class="attr">this.form.submit</span>();”&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”button”</span> <span class="attr">value</span>=<span class="string">”Retrieve</span> <span class="attr">Password</span>” <span class="attr">onClick</span>=<span class="string">”this.form.action</span> = <span class="string">‘password.html’;</span> <span class="attr">this.form.submit</span>();”&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>52 使用图像按钮<br>引用内容程序代码</p>
+<figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">”myForm”</span> <span class="attr">action</span>=<span class="string">”login.html”</span>&gt;</span></span><br><span class="line">Username: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”text”</span> <span class="attr">name</span>=<span class="string">”username”</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Password: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”password”name</span>=<span class="string">”password”</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">”image”</span> <span class="attr">src</span>=<span class="string">”/”login.gif””</span> <span class="attr">value</span>=<span class="string">”Login”</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>53 表单数据的加密<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;SCRIPT LANGUAGE=’JavaScript’&gt;</span><br><span class="line">&lt;!–</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">encrypt</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> newItem = ”;</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>; i &lt; item.length; i++) &#123;</span><br><span class="line">newItem += item.charCodeAt(i) + ‘.’;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> newItem;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">encryptForm</span>(<span class="params">myForm</span>) </span>&#123;</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>; i &lt; myForm.elements.length; i++) &#123;</span><br><span class="line">myForm.elements[i].value = encrypt(myForm.elements[i].value);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//–&gt;</span></span><br><span class="line">&lt;<span class="regexp">/SCRIPT&gt;</span></span><br><span class="line"><span class="regexp">&lt;form name=’myForm’ onSubmit=’encryptForm(this); window.alert(this.myField.value);’&gt;</span></span><br><span class="line"><span class="regexp">Enter Some Text: &lt;input type=text name=myField&gt;&lt;input type=submit&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>form&gt;</span><br></pre></td></tr></table></figure></p>
+<p>JavaScript就这么回事5：窗口和框架<br>54 改变浏览器状态栏文字提示<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.status = “A <span class="keyword">new</span> status message”;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>55 弹出确认提示框<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> userChoice = <span class="built_in">window</span>.confirm(“Click OK or Cancel”);</span><br><span class="line"><span class="keyword">if</span> (userChoice) &#123;</span><br><span class="line"><span class="built_in">document</span>.write(“You chose OK”);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"><span class="built_in">document</span>.write(“You chose Cancel”);</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>56 提示输入<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> userName = <span class="built_in">window</span>.prompt(“Please Enter Your Name”,”Enter Your Name Here”);</span><br><span class="line"><span class="built_in">document</span>.write(“Your Name is “ + userName);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>57 打开一个新窗口<br>引用内容//打开一个名称为myNewWindow的浏览器新窗口<br>程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.open(“http:<span class="comment">//www.liu21st.com/”,”myNewWindow”);</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>58 设置新窗口的大小<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.open(“http:<span class="comment">//www.liu21st.com/”,”myNewWindow”,’height=300,width=300′);</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>59 设置新窗口的位置<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.open(“http:<span class="comment">//www.liu21st.com/”,”myNewWindow”,’height=300,width=300,left=200,screenX=200,top=100,screenY=100′);</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>60 是否显示工具栏和滚动栏<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.open(“http:<span class="comment">//www.x-force.cn/”,toolbar=no, menubar=no);</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>61 是否可以缩放新窗口的大小<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="built_in">window</span>.open(‘http:<span class="comment">//www.x-force.cn/’ , ‘myNewWindow’, ‘resizable=yes’ );&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>62 加载一个新的文档到当前窗口<br>引用内容程序代码<br><figure class="hljs highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">’#’</span> <span class="attr">onClick</span>=<span class="string">’document.location</span> = <span class="string">’125a.html’;’</span> &gt;</span>Open New Document<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>63 设置页面的滚动位置<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">document</span>.all) &#123; <span class="comment">//如果是IE浏览器则使用scrollTop属性</span></span><br><span class="line"><span class="built_in">document</span>.body.scrollTop = <span class="number">200</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123; <span class="comment">//如果是NetScape浏览器则使用pageYOffset属性</span></span><br><span class="line"><span class="built_in">window</span>.pageYOffset = <span class="number">200</span>;</span><br><span class="line">&#125;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>64 在IE中打开全屏窗口<br>引用内容程序代码<br><figure class="hljs highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=’#’ onClick=”window.open(‘http://www.devdao.com/’,'newWindow’,'fullScreen=yes’);”&gt;Open a full-screen window&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<p>65 新窗口和父窗口的操作<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="comment">//定义新窗口</span></span><br><span class="line"><span class="keyword">var</span> newWindow = <span class="built_in">window</span>.open(“<span class="number">128</span>a.html”,”newWindow”);</span><br><span class="line">newWindow.close(); <span class="comment">//在父窗口中关闭打开的新窗口</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;在新窗口中关闭父窗口</span></span><br></pre></td></tr></table></figure></p>
+<p>程序代码<br><code>window.opener.close()</code><br>66 往新窗口中写内容<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> newWindow = <span class="built_in">window</span>.open(“”,”newWindow”);</span><br><span class="line">newWindow.document.open();</span><br><span class="line">newWindow.document.write(“This is a <span class="keyword">new</span> <span class="built_in">window</span>”);</span><br><span class="line">newWIndow.document.close();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>67 加载页面到框架页面<br>引用内容程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;frameset cols=”<span class="number">50</span>%,*”&gt;</span><br><span class="line">&lt;frame name=”frame1” src=”/”<span class="number">135</span>a.html””&gt;</span><br><span class="line">&lt;frame name=”frame2” src=”/”about:blank””&gt;</span><br><span class="line">&lt;<span class="regexp">/frameset&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>在frame1中加载frame2中的页面<br><code>parent.frame2.document.location = “135b.html”;</code><br>68 在框架页面之间共享脚本<br>引用内容如果在frame1中html文件中有个脚本<br>程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doAlert</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">window</span>.alert(“Frame <span class="number">1</span> is loaded”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>那么在frame2中可以如此调用该方法<br>程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body onLoad=”parent.frame1.doAlert();”&gt;</span><br><span class="line">This is frame <span class="number">2.</span></span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>69 数据公用<br>引用内容可以在框架页面定义数据项，使得该数据可以被多个框架中的页面公用<br>程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=”JavaScript”&gt;</span><br><span class="line"><span class="keyword">var</span> persistentVariable = “This is a persistent value”;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;frameset cols=”50%,*”&gt;</span></span><br><span class="line"><span class="regexp">&lt;frame name=”frame1” src=”/</span>”<span class="number">138</span>a.html””&gt;</span><br><span class="line">&lt;frame name=”frame2” src=”/”<span class="number">138</span>b.html””&gt;</span><br><span class="line">&lt;<span class="regexp">/frameset&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>这样在frame1和frame2中都可以使用变量persistentVariable<br>70 框架代码库<br>引用内容根据以上的一些思路，我们可以使用一个隐藏的框架页面来作为整个框架集的代码库<br>程序代码<br><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;frameset cols=”<span class="number">0</span>,<span class="number">50</span>%,*”&gt;</span><br><span class="line">&lt;frame name=”codeFrame” src=”/”<span class="number">140</span>code.html””&gt;</span><br><span class="line">&lt;frame name=”frame1” src=”/”<span class="number">140</span>a.html””&gt;</span><br><span class="line">&lt;frame name=”frame2” src=”/”<span class="number">140</span>b.html””&gt;</span><br><span class="line">&lt;<span class="regexp">/frameset&gt;</span></span><br></pre></td></tr></table></figure></p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/基础知识/" rel="tag"><i class="fas fa-tags"></i>基础知识</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;" aria-hidden="true">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.jpg" alt="微信支付">
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝">
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2018/10/11/javascript-闭包/" rel="next" title="javascript 闭包"><i class="fas fa-angle-left"></i><span class="nav-title">javascript 闭包</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/2018/10/11/javascript-预编译执行/" rel="prev" title="javascript 预编译执行"><span class="nav-title">javascript 预编译执行</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div class="commentjs" id="comment-thread"></div>
+  <link rel="stylesheet" href="/css/commentjs.css">
+  <script defer type="text/javascript" src="/js/marked.min.js"></script>
+  <script defer type="text/javascript" src="/js/timeago.min.js"></script>
+  <script defer type="text/javascript" src="/js/highlight.min.js"></script>
+  <script defer type="text/javascript" src="/js/commentjs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    getComments({
+      "type": "",
+      "user": "",
+      "repo": "",
+      "client_id": "",
+      "client_secret": "",
+      "no_comment": "这个页面还没有评论，现在就去评论吧！",
+      "go_to_comment": "去评论",
+      "issue_title": "javascript 基础知识",
+      "btn_class": "button",
+      "comments_target": "#comment-thread"
+    });
+    marked.setOptions({
+      "highlight": function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function mark() {
+      var markdowns = document.getElementsByClassName("markdown");
+      for (var i = 0; i < markdowns.length; ++i){
+        if (markdowns[i].innerHTML) {
+          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", mark, false);
+    window.addEventListener("load", mark, false);
+  });
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/avatar.png" alt="Wang Li">
+  
+  <h1 class="author-name">Wang Li</h1>
+  <h2 class="author-description">前端开发、HTML5、CSS3、Javascript的前端开发独立博客。</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">23</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">2</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">10</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    
+    
+    <hr>
+    <div class="social-link sidebar-item">
+      <div><i class="far fa-address-card"></i>社交链接<p></p></div>
+      <ul>
+        
+        <li><i class="fas fa-envelope"></i><a href="http://wpa.qq.com/msgrd?v=3&uin=6169422&site=qq&menu=yes" target="_blank">QQ</a></li>
+        
+        <li><i class="fab fa-github"></i><a href="https://github.com/nestedclass" target="_blank">GitHub</a></li>
+        
+        <li><i class="fab fa-weibo"></i><a href="https://weibo.com/u/1102053067" target="_blank">Weibo</a></li>
+        
+      </ul>
+    </div>
+    
+    
+    <hr>
+    <div class="blogroll sidebar-item">
+      <div><i class="fas fa-link"></i>友情链接</div>
+      <ul>
+        
+        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">Wang Li</span><span class="year"><i class="far fa-copyright"></i>2020</span>
+        </div>
+        
+        <div class="busuanzi">
+          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="站点点击量" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="站点用户数" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="页面点击量" aria-hidden="false"></span></span>
+        </div>
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
